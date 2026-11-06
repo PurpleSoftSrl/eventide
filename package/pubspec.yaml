@@ -20,9 +20,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
-  pigeon: ^26.1.0
-  timezone: ^0.10.1
+  flutter_lints: ^6.0.0
+  pigeon: ^29.1.0
+  timezone: ^0.11.2
   mocktail: ^1.0.4
   clock: ^1.1.2
   import_sorter: ^4.6.0

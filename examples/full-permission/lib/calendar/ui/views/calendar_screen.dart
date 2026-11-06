@@ -127,6 +127,7 @@ final class _CalendarScreenState extends State<CalendarScreen> with SingleTicker
                 children: [
                   MonthView(
                     controller: _controller,
+                    monthViewBuilders: MonthViewBuilders(
                     onEventTap: (calendarEventData, date) {
                       if (state case Value(:final data?)) {
                         final event = calendarEventData.event;
@@ -202,6 +203,7 @@ final class _CalendarScreenState extends State<CalendarScreen> with SingleTicker
                         },
                       );
                     },
+                    ),
                   ),
                   WeekView(
                     controller: _controller,

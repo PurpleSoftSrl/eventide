@@ -23,7 +23,7 @@ void main() {
     eventide = Eventide(calendarApi: mockCalendarApi);
   });
 
-  final location = getLocation('UTC');
+  final location = UTC;
   final startDate = TZDateTime.now(location);
   final endDate = startDate.add(const Duration(hours: 1));
   final event = Event(
@@ -680,7 +680,7 @@ void main() {
 
   test('create Event timezone management test: Paris - Montréal flight', () async {
     final parisDeparture = TZDateTime(getLocation('Europe/Paris'), 2025, 9, 8, 13, 30);
-    final montrealArrival = TZDateTime(getLocation('America/Montreal'), 2025, 9, 8, 15, 00);
+    final montrealArrival = TZDateTime(getLocation('America/Toronto'), 2025, 9, 8, 15, 00);
     final utcParisDeparture = parisDeparture.toUtc();
     final utcMontrealArrival = montrealArrival.toUtc();
 
